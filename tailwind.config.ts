@@ -8,10 +8,10 @@ const config: Config = {
 		colors: {
 			BG100: "#FFFFFF",
 			BG300: "#F5F5F5",
-			Line: "#DEDEDE",
-			TXT100: "#242424",
-			TXT300: "#8A8B8F",
-			Primary: "#0EA8FF"
+			Line: "#BDC5CD",
+			TXT100: "#141619",
+			TXT300: "#687684",
+			Primary: "#4C9EEB"
 		},
 		screens: {
 			"xs": { max: "429px" },
