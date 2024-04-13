@@ -20,6 +20,9 @@ const config: Config = {
 			"base": { min: "1280px", max: "1439px" },
 			"lg": { min: "1440px", max: "1511px" },
 			"xl": { min: "1512px" }
+		},
+		backgroundImage: {
+			perfil: "url(/perfil.jpg)"
 		}
 	},
 	plugins: [],
