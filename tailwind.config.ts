@@ -17,9 +17,8 @@ const config: Config = {
 			"xs": { max: "429px" },
 			"sm": { min: "430px", max: "739px" },
 			"md": { min: "740px", max: "1279px" },
-			"base": { min: "1280px", max: "1439px" },
-			"lg": { min: "1440px", max: "1511px" },
-			"xl": { min: "1512px" }
+			"lg": { min: "1280px", max: "1439px" },
+			"xl": { min: "1440px" }
 		},
 		backgroundImage: {
 			perfil: "url(/perfil.jpg)"
