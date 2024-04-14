@@ -1,3 +1,5 @@
+import { FiLink } from "react-icons/fi";
+import { BsCalendar3 } from "react-icons/bs";
 
 function Info() {
 	return(
@@ -10,10 +12,12 @@ function Info() {
 				<p className="text-TXT100 font-light xs:text-[10px]">Engenheiro de Software | Java | Typescript</p>
 			</section>
 			<section className="flex items-center xs:gap-4">
-				<div>
+				<div className="flex xs:gap-[2px]">
+					<FiLink className="text-TXT300 text-xs" />
 					<p className="text-Primary font-normal text-[8px]">mikaelbernardes</p>
 				</div>
-				<div>
+				<div className="flex xs:gap-[2px]">
+					<BsCalendar3 className="text-TXT300 text-xs" />
 					<p className="text-TXT300 font-normal text-[8px]">desde 22/02/2021</p>
 				</div>
 			</section>
