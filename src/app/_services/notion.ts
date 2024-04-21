@@ -20,6 +20,7 @@ export async function getPosts() {
 		const tags = post.properties.tags && post.properties.tags.multi_select
 			? post.properties.tags.multi_select.map((tag) => tag.name)
 			: [""];
+		const description = post.properties.description?.rich_text?.[0]?.plain_text || "";
 
 		return {
 			id: post.id,
@@ -27,6 +28,7 @@ export async function getPosts() {
 			slug: slug,
 			tags: tags,
 			createdAt: post.created_time,
+			description: description
 		};
 	});
 	
