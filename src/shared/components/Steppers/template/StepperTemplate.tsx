@@ -2,20 +2,24 @@ import { StepperProps } from "@/@types/Stepper";
 import { Stepper } from "..";
 
 function StepperTemplate({
-	circleColor,
 	title,
 	subTitle,
 	timeLapse,
-	content
+	position,
+	content,
+	link,
+	image
 } : StepperProps) {
 
 	return(
 		<Stepper.Root>
-			<Stepper.Info 
-				circleColor={circleColor}
+			<Stepper.Info
 				subTitle={subTitle}
 				timeLapse={timeLapse}
 				title={title}
+				link={link}
+				position={position}
+				image={image}
 			/>
 			{
 				!!content &&
