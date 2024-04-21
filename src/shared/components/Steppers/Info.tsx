@@ -46,7 +46,11 @@ function StepperInfo({
 					!link ?
 						<h2 className="xs:text-[10px] sm:text-[10px] md:text-xs lg:text-base xl:text-lg text-TXT100">{title}</h2>
 						:
-						<Link href={link} className="xs:text-[10px] sm:text-[10px] md:text-xs lg:text-base xl:text-lg text-TXT100 hover:text-Primary transition-all">{title}</Link>
+						<Link 
+							href={link} 
+							target="_blank"
+							className="xs:text-[10px] sm:text-[10px] md:text-xs lg:text-base xl:text-lg text-TXT100 hover:text-Primary transition-all"
+						>{title}</Link>
 				}
 				<p className="xs:text-[8px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-sm text-TXT300">{subTitle}</p>
 				<span className="xs:text-[8px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-sm text-TXT300">{timeLapse}</span>
