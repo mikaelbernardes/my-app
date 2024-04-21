@@ -1,5 +1,6 @@
 import { FiLink } from "react-icons/fi";
 import { BsCalendar3 } from "react-icons/bs";
+import Link from "next/link";
 
 function Info() {
 	return(
@@ -18,7 +19,11 @@ function Info() {
 			<section className="flex items-center xs:gap-4 sm:gap-4 md:gap-10 lg:gap-16 xl:gap-20">
 				<div className="flex items-center xs:gap-[2px] sm:gap-1 md:gap-2 lg:gap-3 xl:gap-3">
 					<FiLink className="text-TXT300 xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"/>
-					<p className="text-Primary font-normal xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base">mikaelbernardes</p>
+					<Link 
+						href="https://www.linkedin.com/in/bernardesmikael/"
+						target="_blank"
+						className="text-Primary font-normal xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base"
+					>mikaelbernardes</Link>
 				</div>
 				<div className="flex items-center xs:gap-[2px] sm:gap-1 md:gap-2 lg:gap-3 xl:gap-3">
 					<BsCalendar3 className="text-TXT300 xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base" />
