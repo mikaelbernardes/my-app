@@ -1,10 +1,14 @@
+import { DataStepperBuilder } from "@/@types/Stepper";
 import { StepperTemplate } from "../../components/Steppers/template/StepperTemplate";
-import { SteppersArray } from "../../data/DataStepperBuilder";
 import { StepperLine } from "./StepperLine";
 
-function StepperBuilder() {
+interface StepperBuilderProps {
+	data: DataStepperBuilder[]
+}
 
-	const stepperLines = SteppersArray.map((_, index) => <StepperLine key={index} position={index} size={SteppersArray.length} />);
+function StepperBuilder({ data } : StepperBuilderProps) {
+
+	const stepperLines = data.map((_, index) => <StepperLine key={index} position={index} size={data.length} />);
 
 	return (
 		<section className="flex flex-col gap-8">
@@ -14,12 +18,12 @@ function StepperBuilder() {
 					<div className="flex flex-col items-center">
 						<StepperTemplate
 							position={index}
-							content={SteppersArray[index].content}
-							subTitle={SteppersArray[index].subTitle}
-							title={SteppersArray[index].title}
-							timeLapse={SteppersArray[index].timeLapse}
-							image={SteppersArray[index].image}
-							link={SteppersArray[index].link}
+							content={data[index].content}
+							subTitle={data[index].subTitle}
+							title={data[index].title}
+							timeLapse={data[index].timeLapse}
+							image={data[index].image}
+							link={data[index].link}
 						/>
 					</div>
 				</div>
