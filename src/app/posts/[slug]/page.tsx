@@ -9,7 +9,6 @@ interface PropsSlug {
 
 export default async function Blog({ params }: PropsSlug) {
 
-
 	const post = await getPost(params.slug);
 
 	return (
