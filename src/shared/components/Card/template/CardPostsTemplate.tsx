@@ -2,21 +2,24 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Card } from "..";
 import Link from "next/link";
 import { transformDateToBrasilianDate } from "@/utils/transformDateToBrasilianDate";
+import PerfilImg from "@public/perfil.jpg";
 
 interface CardPostsTemplateProps {
-    perfilImage: string | StaticImport,
-    perfilName: string,
+    perfilImage?: string | StaticImport,
+    perfilName?: string,
     createdAt: string,
     content: string,
-    slug: string
+    slug: string,
+	title: string
 }
 
 function CardPostsTemplate({
-	perfilImage,
-	perfilName,
+	perfilImage = PerfilImg,
+	perfilName = "Mikael Bernardes",
 	createdAt,
 	content,
-	slug
+	slug,
+	title
 }: CardPostsTemplateProps) {
 
 	return (
@@ -31,6 +34,7 @@ function CardPostsTemplate({
 				className="w-fit h-fit"
 			>
 				<Card.Content
+					title={title}
 					content={content}
 				/>
 			</Link>
