@@ -56,9 +56,6 @@ export default async function Blog({ params }: PropsSlug) {
 		code: ({ node, className, children, ...props }: any) => {
 			const match = /language-(\w+)/.exec(className || "");
 
-			console.log(match);
-			
-
 			const newStyles: CSSProperties = {
 				marginTop: "10px",
 				border: "1px solid #DEDEDE",
