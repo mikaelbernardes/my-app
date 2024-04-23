@@ -21,23 +21,23 @@ export default async function Blog({ params }: PropsSlug) {
 	const post = await getPost(params.slug);
 
 	const stylesForMarkdown = {
-		p: ({ _, children }: any ) => <p className="xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base text-TXT300">{children}</p>,
+		p: ({ _, children }: any) => <p className="xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base text-TXT300">{children}</p>,
 		strong: ({ node, children }: any) => {
 			return <span className='text-Primary underline font-semibold decoration-solid xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base'>{children}</span>;
 		},
 		hr: ({ node, props }: any) => {
-			return <hr className='w-[500px] h-[2px] bg-TXT100' {...props} />;
+			return <hr className='w-full h-[1px] text-Line my-6' {...props} />;
 		},
 		h1: ({ node, children }: any) => {
-			return <h1 
+			return <h1
 				className={`
 					text-Primary font-bold xs:text-xl xs:mt-4 xs:mb-4 sm:text-xl sm:mt-4 sm:mb-4 md:text-3xl 
 					md:mt-5 md:mb-5 lg:text-3xl lg:mt-5 lg:mb-5 xl:text-4xl xl:mt-6 xl:mb-6 
 				`}
 			>{children}</h1>;
 		},
-		h2:  ({ node, children }: any) => {
-			return <h2 
+		h2: ({ node, children }: any) => {
+			return <h2
 				style={{ color: "transparent" }}
 				className={`
 					font-semibold xs:text-lg xs:mt-5 xs:mb-3 sm:text-lg sm:mt-5 sm:mb-3 md:text-2xl md:mt-6 md:mb-4 lg:text-2xl lg:mt-6 lg:mb-4 xl:text-3xl xl:mt-7 
@@ -45,8 +45,8 @@ export default async function Blog({ params }: PropsSlug) {
 				`}
 			>{children}</h2>;
 		},
-		h3:  ({ node, children }: any) => {
-			return <h3 
+		h3: ({ node, children }: any) => {
+			return <h3
 				className={`
 					text-T300 font-medium xs:text-base xs:mt-3 xs:mb-3 sm:text-base sm:mt-3 sm:mb-3 md:text-xl md:mt-4 md:mb-4 lg:text-xl lg:mt-4 
 					lg:mb-4 xl:text-2xl xl:mt-5 xl:mb-5
@@ -55,6 +55,9 @@ export default async function Blog({ params }: PropsSlug) {
 		},
 		code: ({ node, className, children, ...props }: any) => {
 			const match = /language-(\w+)/.exec(className || "");
+
+			console.log(match);
+			
 
 			const newStyles: CSSProperties = {
 				marginTop: "10px",
