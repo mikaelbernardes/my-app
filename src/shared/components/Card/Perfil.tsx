@@ -26,7 +26,7 @@ function CardPerfil({
 				/>
 			</div>
 			<div className="flex flex-col justify-center">
-				<h2 className="xs:text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-base font-light text-TXT100">{ name }</h2>
+				<h2 className="xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-light text-TXT100">{ name }</h2>
 				<p className="xs:text-[8px] sm:text-[10px] md:text-xs lg:text-sm xl:text-sm font-light text-TXT300">{ marcationName }</p>
 			</div>
 		</div>
