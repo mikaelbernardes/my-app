@@ -12,7 +12,7 @@ export function useNavigation() {
 			pathname: "/about"
 		},
 		{
-			name: "Posts",
+			name: "Blog",
 			pathname: "/posts"
 		},
 		{
