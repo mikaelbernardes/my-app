@@ -102,7 +102,7 @@ export const StudiesSteppers: DataStepperBuilder[] = [
 		title: "RocketSeat",
 		subTitle: "Curso de Frontend",
 		timeLapse: "",
-		content: "Curso dos gêmeos DevEmDobro com mentoria e suporte de Dev's Sênior's",
+		content: "Curso de introdução a programação frontend na Rocketseat",
 		image: RocketseatLogo,
 		link: "https://www.rocketseat.com.br/"
 	},
