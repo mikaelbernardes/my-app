@@ -11,8 +11,6 @@ export default function Home() {
 					perfilImage={Perfil}
 					perfilMarcationName="@mikaelbernardes"
 					perfilName="Mikael Bernardes"
-					postAlt=""
-					postImage={Perfil}
 					content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro deserunt magnam adipisci, unde illo exercitationem? Officia, nisi. Cupiditate"
 				/>
 			</div>
