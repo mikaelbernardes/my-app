@@ -11,7 +11,7 @@ const config: Config = {
 			Line: "#BDC5CD",
 			TXT100: "#141619",
 			TXT300: "#687684",
-			Primary: "#4C9EEB",
+			Primary: "#1C9EEB",
 			transparent: "transparent"
 		},
 		screens: {
