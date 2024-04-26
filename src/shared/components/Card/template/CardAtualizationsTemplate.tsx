@@ -6,8 +6,8 @@ interface CardAtualizationsTemplateProps {
     perfilName: string,
     perfilMarcationName: string,
     content: string,
-    postImage: string | StaticImport,
-    postAlt: string
+    postImage?: string | StaticImport,
+    postAlt?: string
 }
 
 function CardAtualizationsTemplate({
@@ -31,7 +31,7 @@ function CardAtualizationsTemplate({
 			/>
 			{
 				!!postImage &&
-                <Card.ImagePost src={postImage} alt={postAlt} />
+                <Card.ImagePost src={postImage} alt={postAlt || ""} />
 			}
 		</Card.Root>
 	);
