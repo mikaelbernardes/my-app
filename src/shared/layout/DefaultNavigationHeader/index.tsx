@@ -1,6 +1,8 @@
+import { SocialMediaLinksData } from "@/shared/data/DataSocialMediaLinks";
 import { Banner } from "./Banner";
 import { Info } from "./Info";
 import { Navigation } from "./Navigation";
+import { SocialMediaLinks } from "./SocialMediaLinks";
 
 function DefaultNavigationHeader() {
 
@@ -13,6 +15,23 @@ function DefaultNavigationHeader() {
 					bg-cover bg-center xs:left-5 sm:left-16 md:left-32 lg:left-56 xl:left-72 xs:top-9 sm:top-16 md:top-[110px] lg:top-[146px] xl:top-[146px]
 				`} 
 			/>
+			<div 
+				className={`
+				absolute xs:top-[86px] sm:top-36 md:top-56 lg:top-72 xs:right-3 sm:right-5 md:right-28 lg:right-44 flex items-center xs:gap-3 sm:gap-3 md:gap-6 lg:gap-8
+				xl:top-72 right-60 xl:gap-8
+				`}
+			>
+				{
+					SocialMediaLinksData.map((item, index) => (
+						<SocialMediaLinks 
+							icon={item.icon}
+							link={item.link}
+							key={index}
+							color={item.color}
+						/>
+					))
+				}
+			</div>
 			<Info />
 			<Navigation />
 		</header>
@@ -20,3 +39,4 @@ function DefaultNavigationHeader() {
 }
 
 export { DefaultNavigationHeader };
+
