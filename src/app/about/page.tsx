@@ -29,7 +29,12 @@ export default function About() {
 					</div>
 					<div className="w-full gap-6 h-fit flex flex-col items-center justify-center xs:my-4 sm:my-4 md:my-6 lg:my-8 xl:my-10 relative">
 						<p className="xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-TXT300">Baixar Currículo</p>
-						<a className="w-[55px] h-[50px] border-none outline-none cursor-pointer select-none touch-manipulation rounded-full relative duration-300">
+						<a 
+							href="./Resume.pdf"
+							rel="noopener noreferrer" 
+							className="w-[55px] h-[50px] border-none outline-none cursor-pointer select-none touch-manipulation rounded-full relative duration-300"
+							download
+						>
 							<span className="bg-TXT300 rounded-full absolute left-0 top-0 w-full h-full"></span>
 							<span className="bg-Primary rounded-full shadow-sm shadow-Primary absolute border border-Primary left-0 top-0 w-full h-full flex justify-center items-center text-xl font-semibold -translate-y-[15%] duration-150 text-Line active:translate-y-[0%] active:shadow-none"></span>
 						</a>
