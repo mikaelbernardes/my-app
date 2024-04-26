@@ -18,7 +18,7 @@ function DefaultNavigationHeader() {
 			<div 
 				className={`
 				absolute xs:top-[86px] sm:top-36 md:top-56 lg:top-72 xs:right-3 sm:right-5 md:right-28 lg:right-44 flex items-center xs:gap-3 sm:gap-3 md:gap-6 lg:gap-8
-				xl:top-72 right-60 xl:gap-8
+				xl:top-72 right-60 xl:gap-8 xl:right-56
 				`}
 			>
 				{
