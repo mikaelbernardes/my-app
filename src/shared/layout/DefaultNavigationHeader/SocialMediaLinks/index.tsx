@@ -3,15 +3,17 @@ import Link from "next/link";
 export interface SocialMediaLinksProps {
     icon: React.ElementType,
     link: string,
-    color: string
+    color: string,
+	name: string
 }
 
-function SocialMediaLinks({ icon: Icon, link, color } : SocialMediaLinksProps) {
+function SocialMediaLinks({ icon: Icon, link, color, name } : SocialMediaLinksProps) {
 
 	return(
 		<Link 
 			href={link}
 			target="_blank"
+			title={name}
 			className={`
                 w-fit h-fit flex items-center justify-center bg-BG300 rounded-lg shadow-sm cursor-pointer transition-all hover:shadow-inner hover:translate-y-1 duration-300 p-2
                 text-TXT300 ${color} shadow-TXT300 
