@@ -27,7 +27,7 @@ function Info() {
 				</div>
 				<div className="flex items-center xs:gap-[2px] sm:gap-1 md:gap-2 lg:gap-3 xl:gap-3">
 					<BsCalendar3 className="text-TXT300 xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base" />
-					<p className="text-TXT300 font-normal xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base">desde 05/2024</p>
+					<p className="text-TXT300 font-normal xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base">Criado em 05/2024</p>
 				</div>
 			</section>
 			<section className="flex items-center xs:gap-4 sm:gap-4 md:gap-10 lg:gap-16 xl:gap-20">
