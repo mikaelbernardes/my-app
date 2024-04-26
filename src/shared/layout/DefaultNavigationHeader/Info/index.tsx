@@ -32,7 +32,7 @@ function Info() {
 			</section>
 			<section className="flex items-center xs:gap-4 sm:gap-4 md:gap-10 lg:gap-16 xl:gap-20">
 				<p className="text-TXT300 font-light xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base">
-					<span className="text-TXT100 font-medium">4.202 </span> Seguindo</p>
+					<span className="text-TXT100 font-medium">4.202 </span> Conexões</p>
 				<p className="text-TXT300 font-light xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base">
 					<span className="text-TXT100 font-medium">4.593 </span> Seguidores</p>
 			</section>
