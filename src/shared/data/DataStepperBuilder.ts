@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { DataStepperBuilder } from "@/@types/Stepper";
 import CartsysLogo from "@public/cartsysLogo.jpeg";
 import ProcipaLogo from "@public/procipaLogo.jpeg";
@@ -6,7 +7,7 @@ import PrefeituraCristinaLogo from "@public/prefeituraCristinaLogo.png";
 import RocketseatLogo from "@public/rocketseatLogo.jpeg";
 import UdemyLogo from "@public/udemyLogo.jpeg";
 import DevQuestLogo from "@public/devquestLogo.jpeg";
-import AmpliLogo from "@public/ampliLogo.jpeg";
+import WorkanaLogo from "@public/workanaLogo.jpeg";
 
 export const worksSteppers: DataStepperBuilder[] = [
 	{
@@ -19,6 +20,8 @@ export const worksSteppers: DataStepperBuilder[] = [
 	},
 	{
 		title: "Freelancer",
+		image: WorkanaLogo,
+		
 		subTitle: "Desenvolvedor FullStack",
 		timeLapse: "Fevereiro de 2022 - O momento",
 		content: "Desenvolvedor Fullstack atuando majoritariamente com React Native, NextJS, Java, Spring Boot e SQL"
@@ -34,7 +37,7 @@ export const worksSteppers: DataStepperBuilder[] = [
 	{
 		title: "Exército Brasileiro",
 		subTitle: "Soldado EV",
-		timeLapse: "Fevereiro de 2021 - Janeiro de 2021",
+		timeLapse: "Fevereiro de 2021 - Janeiro de 2022",
 		content: "Soldado EV Corneteiro no 4° Batalhão de Engenharia de Combate de Itajubá/MG",
 		image: ExercitoBrasileiroLogo,
 		link: "https://www.eb.mil.br/"
@@ -51,59 +54,27 @@ export const worksSteppers: DataStepperBuilder[] = [
 
 export const StudiesSteppers: DataStepperBuilder[] = [
 	{
-		title: "Faculdade Ampli",
-		subTitle: "Egenharia de Software",
-		timeLapse: "Abril de 2024 - O momento",
-		content: "Curso dos gêmeos DevEmDobro com mentoria e suporte de Dev's Sênior's",
-		image: AmpliLogo,
-		link: "https://www.ampli.com.br/"
-	},
-	{
 		title: "Udemy",
-		subTitle: "Curso de UML",
+		subTitle: "Cursos",
 		timeLapse: "",
-		content: "Curso avançado de criação de UML com o renomado professor Nélio Alves",
+		content: "Cursos básicos e avançados tanto em frontend com typescript como backend com Java, diversos cursos e vertificados que agregam valor ao meu conhecimento, clique no link do título para ter acesso a todos",
 		image: UdemyLogo,
 		link: "https://www.udemy.com/"
 	},
 	{
-		title: "Udemy",
-		subTitle: "Curso de Spring Boot e Micro Serviços",
+		title: "RocketSeat",
+		subTitle: "Curso Fullstack",
 		timeLapse: "",
-		content: "Curso avançado de Spring Boot com padrão de micro serviços com o renomado professor Nélio Alves",
-		image: UdemyLogo,
-		link: "https://www.udemy.com/"
-	},
-	{
-		title: "Udemy",
-		subTitle: "Curso de Java",
-		timeLapse: "",
-		content: "Curso avançado de Java com o renomado professor Nélio Alves",
-		image: UdemyLogo,
-		link: "https://www.udemy.com/"
-	},
-	{
-		title: "Udemy",
-		subTitle: "Curso de ReactJS/NextJS",
-		timeLapse: "",
-		content: "Curso avançado em frontend com framework NextJS e a lib ReactJS com ênfase no estudo por padrões de arquitetura com o professor Luiz Otávio Miranda",
-		image: UdemyLogo,
-		link: "https://www.udemy.com/"
+		content: "Curso focado em Javascript com React | NextJS | React Native e atualizado com aulas de Java | IA e cursos básicos como Figma",
+		image: RocketseatLogo,
+		link: "https://www.rocketseat.com.br/"
 	},
 	{
 		title: "DevQuest",
 		subTitle: "Curso de Frontend",
 		timeLapse: "",
-		content: "Curso dos gêmeos DevEmDobro com mentoria e suporte de Dev's Sênior's",
+		content: "Curso dos gêmeos DevEmDobro com mentoria e suporte de Dev's Sênior's onde iniciei meus estudos de programação Frontend",
 		image: DevQuestLogo,
 		link: "https://devemdobro.com/devquest-starter/"
-	},
-	{
-		title: "RocketSeat",
-		subTitle: "Curso de Frontend",
-		timeLapse: "",
-		content: "Curso de introdução a programação frontend na Rocketseat",
-		image: RocketseatLogo,
-		link: "https://www.rocketseat.com.br/"
-	},
+	}
 ];

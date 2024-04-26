@@ -5,22 +5,22 @@ import { SocialMediaLinksProps } from "../layout/DefaultNavigationHeader/SocialM
 export const SocialMediaLinksData: SocialMediaLinksProps[] = [
 	{
 		icon: FaGithub,
-		link: "/",
+		link: "https://github.com/mikaelbernardes",
 		color: "hover:text-[#2B3137]"
 	},
 	{
 		icon: FaLinkedin,
-		link: "/",
+		link: "https://www.linkedin.com/in/bernardesmikael/",
 		color: "hover:text-[#0E76A8]"
 	},
 	{
 		icon: FaBehanceSquare,
-		link: "/",
+		link: "https://www.behance.net/mikaelbernardes1",
 		color: "hover:text-[#053eff]"
 	},
 	{
 		icon: BiLogoGmail,
-		link: "/",
+		link: "mailto:mikaelbernardes2022@gmail.com",
 		color: "hover:text-[#f2a60c]"
 	}
 ];
