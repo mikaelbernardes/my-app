@@ -20,7 +20,7 @@ function Info() {
 				<div className="flex items-center xs:gap-[2px] sm:gap-1 md:gap-2 lg:gap-3 xl:gap-3">
 					<FiLink className="text-TXT300 xs:text-xs sm:text-xs md:text-sm lg:text-base xl:text-base"/>
 					<Link 
-						href="https://www.linkedin.com/in/bernardesmikael/"
+						href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=bernardesmikael"
 						target="_blank"
 						className="text-Primary font-normal xs:text-[8px] sm:text-xs md:text-sm lg:text-base xl:text-base"
 					>mikaelbernardes</Link>
