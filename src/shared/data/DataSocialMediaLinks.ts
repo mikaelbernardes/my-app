@@ -17,7 +17,7 @@ export const SocialMediaLinksData: SocialMediaLinksProps[] = [
 	},
 	{
 		icon: FaBehanceSquare,
-		link: "https://www.behance.net/mikaelbernardes1",
+		link: "https://www.behance.net/mikaelbernardes2022",
 		color: "hover:text-[#053eff]",
 		name: "Behance"
 	},
