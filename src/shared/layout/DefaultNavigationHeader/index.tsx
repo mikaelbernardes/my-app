@@ -26,6 +26,7 @@ function DefaultNavigationHeader() {
 						<SocialMediaLinks 
 							icon={item.icon}
 							link={item.link}
+							name={item.name}
 							key={index}
 							color={item.color}
 						/>
