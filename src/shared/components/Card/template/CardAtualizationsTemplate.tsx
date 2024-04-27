@@ -1,19 +1,20 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Card } from "..";
+import PerfilImg from "@public/perfil.jpg";
 
-interface CardAtualizationsTemplateProps {
-    perfilImage: string | StaticImport,
-    perfilName: string,
-    perfilMarcationName: string,
+export interface CardAtualizationsTemplateProps {
+    perfilImage?: string | StaticImport,
+    perfilName?: string,
+    perfilMarcationName?: string,
     content: string,
     postImage?: string | StaticImport,
     postAlt?: string
 }
 
 function CardAtualizationsTemplate({
-	perfilImage,
-	perfilName,
-	perfilMarcationName,
+	perfilImage = PerfilImg,
+	perfilName = "Mikael Bernardes",
+	perfilMarcationName = "@mikaelbernardes",
 	content,
 	postImage,
 	postAlt
